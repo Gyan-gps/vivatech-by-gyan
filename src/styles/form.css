@@ -1,0 +1,28 @@
+.formContainer{
+    background-color: aliceblue;
+
+}
+
+form{
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}
+
+input,select{
+    padding: 10px 20px;
+    border-radius: 8px;
+}
+.submit{
+    margin: 0 auto;
+    border: none;
+    padding: 10px 40px;
+    font-size: 16px;
+    border-radius: 8px;
+    background: green;
+    color: white;
+    font-weight: 500;
+}

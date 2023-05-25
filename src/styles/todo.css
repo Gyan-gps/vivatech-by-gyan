@@ -1,0 +1,70 @@
+.todosContainer{
+    /* background-color: aqua; */
+}
+
+.cardContainer{
+    max-width: 1100px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 30px;
+    background-color: white;
+    padding: 20px;
+    width: 300px;
+    border-radius: 8px;
+    text-align: left;
+}
+.top{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    align-items: flex-start;
+}
+.card:hover{
+    transform: scale(1.03);
+}
+.title{
+    font-size: 24px;
+}
+.description{
+    font-size: 14px;
+}
+
+.list{
+    padding: 8px;
+}
+
+.action{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.update,.delete{
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 8px;
+    color: white;
+    font-weight: 500;
+}
+
+.update{
+    background: green;
+}
+
+.delete{
+    background: red;
+}
