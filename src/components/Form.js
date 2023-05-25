@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { CREATE_TODO, EDIT_TODO } from "../redux/action";
 import "../styles/form.css";
+import ExportExcelFile from "./ExportExcelFile";
 
 const Form = () => {
   const dispatch = useDispatch();
@@ -77,6 +78,9 @@ const Form = () => {
           {selectedTodo ? "Save" : "Create Todo"}
         </button>
       </form>
+      <div className="excel">
+        <ExportExcelFile />
+      </div>
     </div>
   );
 };

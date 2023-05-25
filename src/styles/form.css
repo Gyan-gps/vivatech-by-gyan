@@ -26,3 +26,20 @@ input,select{
     color: white;
     font-weight: 500;
 }
+
+.excel{
+    width: auto;
+    display: flex;
+    padding-bottom: 10px;
+}
+
+.excel > button{
+    margin: 0 auto;
+    border: none;
+    padding: 10px 40px;
+    font-size: 16px;
+    border-radius: 8px;
+    background: rgb(49, 83, 235);
+    color: white;
+    font-weight: 500;
+}
