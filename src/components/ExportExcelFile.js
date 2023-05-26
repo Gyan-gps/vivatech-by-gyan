@@ -7,11 +7,10 @@ const fileType =
 const fileExtension = ".xlsx";
 const Heading = [
   {
-    firstName: "First Name",
-    lastName: "Last Name",
-    email: "Email",
-    address: "Address",
-    postcode: "Postcode",
+    firstName: "Title",
+    lastName: "Descriptin",
+    email: "List",
+    address: "CreatedAt",
   },
 ];
 const ExportExcelFile = () => {
