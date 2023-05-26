@@ -8,9 +8,9 @@ const fileExtension = ".xlsx";
 const Heading = [
   {
     firstName: "Title",
-    lastName: "Descriptin",
     email: "List",
     address: "CreatedAt",
+    lastName: "Descriptin",
   },
 ];
 const ExportExcelFile = () => {
@@ -21,7 +21,7 @@ const ExportExcelFile = () => {
       skipHeader: true,
       origin: 0, //ok
     });
-    // ws["!cols"] = 5;
+    ws["!cols"] = 5;
     XLSX.utils.sheet_add_json(ws, todos, {
       header: ["title", "descriptin", "list", "createdAt"],
       skipHeader: true,
@@ -30,7 +30,8 @@ const ExportExcelFile = () => {
     const wb = { Sheets: { data: ws }, SheetNames: ["data"] };
     const excelBuffer = XLSX.write(wb, { bookType: "xlsx", type: "array" });
     const data = new Blob([excelBuffer], { type: fileType });
-    FileSaver.saveAs(data, +"Tasks" + fileExtension);
+    // saveAsExcelFile(excelBuffer, `Tasks`);
+    FileSaver.saveAs(data, "Tasks" + fileExtension);
   };
   return <button onClick={() => exportToCSV()}>ExportExcelFile</button>;
 };
